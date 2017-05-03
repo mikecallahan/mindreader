@@ -28,7 +28,7 @@ app.intent("ok", {
         res.shouldEndSession(false); 
         switch(step) {
             case 1:
-                res.say("Pick a number between 1 and 100");
+                res.say("Pick a number between 1 and 100 and then say, ok");
                 break;
             case 2:
                 res.say("Now, double your number.");
@@ -51,7 +51,7 @@ app.intent("ok", {
                         res.say("This is a little bit harder.  Are you concentrating on your number?.  Wait.  I have it now. Your answer is. " + req.session("answer") + ".  Let's do it one more time.  This will really amaze you. I promise. Just say, again.  Otherwise say, stop.");
                         break;
                     case 3:
-                        res.say("Oh no. Something is wrong this time.  I'm not getting a good read.  Focus harder on your number. Ok. It's getting clearer now. I see why this one was harder. Your answer is. " + req.session("answer") + ".  Unbelievable. Right?  I can do this all day and your answers are always different. To do another one say, again.  Otherwise say, stop.");
+                        res.say("Oh no. Something is wrong this time.  I'm not getting a good read.  Focus harder on your number. Ok. It's getting clearer now. I see why this one was harder. Your answer is. " + req.session("answer") + ".  Unbelievable. Right?  I can do this all day, and your answers are always different. To do another one say, again.  Otherwise say, stop.");
                         break;
                     default:
                     res.say("Ok, this is the hard part.  Concentrate on the number you have now.  I'm trying to read your mind.  I almost have it. ok. Your answer is. " + req.session("answer") + ".  I know. Pretty amazing. Right?  Let's do it one more time.  The answers are always different because you can choose different numbers to start with. Just say, again.  Otherwise say, stop.");
