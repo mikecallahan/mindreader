@@ -104,7 +104,6 @@ app.intent("AMAZON.CancelIntent", {
     }
 );
 
-
 app.intent("AMAZON.HelpIntent", {
         "slots": {},
         "utterances": []
