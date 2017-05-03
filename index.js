@@ -108,7 +108,7 @@ app.intent("AMAZON.HelpIntent", {
         "slots": {},
         "utterances": []
     }, function(req,res) {
-      res.say("Fido is the project name for the loyalty points program.  This demo shows how a user in a lab of the future might interact with our virtual lab assistant named Amy. Amy has been created using Amazon echo Alexa technology.")
+      res.say("I will show you how I can read minds.  Have a paper and pencil ready, and say, ok, to continue.")
       res.shouldEndSession(false);
     }
 );
